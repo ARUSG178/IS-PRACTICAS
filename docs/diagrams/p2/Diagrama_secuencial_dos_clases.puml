@@ -1,0 +1,20 @@
+@startuml Diagrama_secuencial_dos_clases_I
+    participant PruebaE1
+    participant ClienteE1
+
+    ClienteE1 -> PruebaE1 : f()
+    activate PruebaE1
+
+    PruebaE1 -> PruebaE1 : g()
+    activate PruebaE1
+
+    PruebaE1 -> PruebaE1 : h()
+    activate PruebaE1
+
+    PruebaE1 -> PruebaE1 : "Algo"
+
+    deactivate PruebaE1
+    deactivate PruebaE1
+    deactivate PruebaE1
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml Diagrama_secuencial_dos_clases_II
+    participant PruebaE2
+    participant ClienteE2
+    participant PruebaE2: p as "Instancia de PruebaE2"
+
+    ClienteE2 -> PruebaE2 : f()
+    activate PruebaE2
+
+    PruebaE2 -> p: new PruebaE2()
+    activate p
+
+    PruebaE2 -> p: g()
+    activate p
+
+    p -> p : h()
+    activate p
+
+    p --> p : "Prueba algo"
+
+    deactivate p
+    deactivate p
+    deactivate p
+    deactivate PruebaE2
+
+@enduml
