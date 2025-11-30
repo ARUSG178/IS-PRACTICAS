@@ -1,0 +1,10 @@
+@startuml Diagrama_baseball
+
+    class EquipoBaseball
+    class Jugador
+    class Estadio
+
+    EquipoBaseball *-- Jugador
+    EquipoBaseball --> Estadio : homeclub
+
+@enduml

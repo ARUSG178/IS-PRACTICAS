@@ -1,0 +1,10 @@
+@startuml Diagrama_HDD
+
+    class Disco_Duro
+    class Pista
+    clas Sector
+
+    Disco_Duro *-- Pista
+    Pista *-- Sector
+
+@enduml

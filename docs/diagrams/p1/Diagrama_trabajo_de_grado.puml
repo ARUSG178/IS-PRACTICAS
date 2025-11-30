@@ -1,0 +1,17 @@
+@startuml Diagrama_trabajo_de_grado
+
+    class Trabajo_de_Investigación
+    class TEG
+    class TGM
+    class Profesor
+    class EstudiantePreGrado
+    class EstudiantePostGrado
+
+    TEG --|> Trabajo_de_Investigación
+    TGM --|> Trabajo_de_Investigación
+
+    Trabajo_de_Investigación "1..2" --> "1..*" Profesor : tutora
+    TGM "1" --> EstudiantePostGrado : realiza
+    TEG "1..2" -> EstudiantePreGrado : realiza
+
+@enduml

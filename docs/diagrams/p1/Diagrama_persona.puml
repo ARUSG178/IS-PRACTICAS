@@ -1,0 +1,18 @@
+@startuml Diagrama_persona
+
+    class Persona {
+        + Nombre : string
+        - ID : double
+        - Edad : int
+        - Peso : double
+    }
+
+    class Estudiante
+    class Profesor
+    class Empleado
+
+    Estudiante --|> Persona
+    Profesor --|> Persona
+    Empleado --|> Persona
+
+@enduml

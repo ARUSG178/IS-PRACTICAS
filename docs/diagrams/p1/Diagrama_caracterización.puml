@@ -1,0 +1,10 @@
+@startuml Diagrama_caracterización
+
+    class Caracterización
+    class Criterio
+    class ElementoC
+
+    Caracterización "1..*" --> Criterio: fundamenta
+    Caracterización *-- ElementoC: genera 
+    
+@enduml

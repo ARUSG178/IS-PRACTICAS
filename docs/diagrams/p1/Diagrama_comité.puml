@@ -1,0 +1,9 @@
+@startuml Diagrama_comité
+
+    class Comité
+    class Persona
+
+    Comité "2..*" --o "0..*" Persona: miembro
+    Comité --> Persona : coordinador
+
+@enduml

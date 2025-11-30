@@ -1,0 +1,13 @@
+@startuml Diagrama_triangulo
+
+    class Poligono
+    class Triangulo{
+        + nLados : int = 3
+    }
+
+    class Lado;
+
+    Poligono *-- Lado
+    Triangulo --|> Poligono
+
+@enduml

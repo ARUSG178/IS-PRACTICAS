@@ -1,0 +1,9 @@
+@startuml Diagrama_Teclado
+    class Teclado {
+        + n_teclas : int
+    }
+
+    class Tecla
+
+    Teclado *-- Tecla : contiene
+@enduml 
