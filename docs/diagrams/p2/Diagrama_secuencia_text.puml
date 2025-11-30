@@ -1,0 +1,10 @@
+@startuml Diagrama_secuencia_text
+
+    participant lista
+    participant textField
+
+    textField -> textField : getText()
+    textField --> lista : Text
+    lista -> lista : add(Text)
+
+@endumml

@@ -1,0 +1,10 @@
+@startuml Diagrama_secuencia_Coleccion
+
+    participant Coleccion
+    participant Estudiante
+
+    miColeccion -> Micoleccion : getEstudiante(i)
+    miColeccion --> Estudiante : retorna Estudiante
+    Estudiante -> Estudiante : getNombre()
+
+@endumml

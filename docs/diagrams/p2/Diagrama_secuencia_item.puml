@@ -1,0 +1,9 @@
+@startuml Diagrama_secuencia
+    participant miLista
+    participant Item
+
+    miLista -> miLista : getItem()
+    miLista --> Item : retorna Item
+    Item -> Item : hacer algo
+
+@endumml
