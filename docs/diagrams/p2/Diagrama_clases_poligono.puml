@@ -1,0 +1,12 @@
+@startuml Diagrama_clases_poligono
+
+    class Poligono
+    class Punto {
+        coord_x = int
+        coord_y = int
+    }
+
+    Poligono "3..*" --> Punto : define
+
+
+@enduml

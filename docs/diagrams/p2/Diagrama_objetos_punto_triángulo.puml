@@ -1,0 +1,36 @@
+@startuml Diagrama_objetos_punto
+    'Se define el objeto como object "Nombre del objeto" y as "Nombre para el Diagrama" para visualización
+
+    object T1 as "Triangulo 1"
+    object T2 as "Triangulo 2"
+
+    object P1 as "Punto" {
+        coord_x = 0
+        coord_y = 0
+    }
+    object P2 as "Punto" {
+        coord_x = 1
+        coord_y = 0
+    }
+    object P3 as "Punto" {
+        coord_x = 0
+        coord_y = 1
+    }
+    object P4 as "Punto" {
+        coord_x = 1
+        coord_y = 1
+    }
+    
+    'Definir relación
+
+    T1 -- P1
+    T1 -- P2
+    T1 -- P3
+
+    'Para que compartan el mismo punto
+
+    T2 -- P4
+    T2 -- P3
+    T2 -- P2
+
+@enduml

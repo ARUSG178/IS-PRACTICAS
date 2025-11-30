@@ -1,0 +1,29 @@
+@startuml Diagrama_cuatro_puntos
+
+    object Polyn as "Poligono"
+
+    object P1 as "Punto"{
+        coord_x = 0
+        coord_y = 0
+    }
+    object P2 as "Punto"{
+        coord_x = 1
+        coord_y = 0
+    }
+    object P3 as "Punto"{
+        coord_x = 0
+        coord_y = 1
+    }
+    object P4 as "Punto"{
+        coord_x = 0
+        coord_y = 0
+    }
+
+    'Relaciones:
+
+    Polyn -- P1
+    Polyn -- P2
+    Polyn -- P3
+    Polyn -- P4
+
+@enduml
