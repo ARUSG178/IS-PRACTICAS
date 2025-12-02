@@ -1,0 +1,22 @@
+@startuml Diagrama_actividad_carro
+    'Comienza el Diagrama
+    start
+
+    :Prendiendo vehículo;
+    :Eligiendo sentido;
+    'Rama de decisión del anterior diagrama
+    if(¿Avanzar o retroceder?) then (Avanzar)
+        :Acelerar;
+        :Cambiando a primera;
+        :Cambiando a segunda;
+        :Cambiando a tercera;
+    else (Retroceder)
+        :Yendo en reversa;
+    'Fin del condicional
+    endif
+    'Independientemente de la situación, el vehículo tendría que deterne en algún punto
+    :Deteniendo vehículo;
+    'Termina el Diagrama
+    stop
+
+@enduml

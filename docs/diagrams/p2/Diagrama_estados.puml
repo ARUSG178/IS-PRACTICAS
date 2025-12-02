@@ -1,0 +1,22 @@
+@startuml Diagrama_estados_carro
+
+    [*] --> Detenido
+
+    Detenido --> Avanzando : Acelerando
+
+    'Estados de acelerando
+    state Avanzando {
+        [*] --> Primera
+        'Si acelera
+        Primera --> Segunda : Aumentando
+        Segunda --> Tercera : Aumentando
+        'Si desacelera
+        Tercera --> Segunda : Disminuyendo
+        Segunda --> Primera : Disminuyendo
+    }
+
+    Detenido --> Retrocediendo : Reversa
+    Retrocediendo --> Detenido : Desacelerando
+    Detenido --> [*] : Apagando
+
+@enduml
